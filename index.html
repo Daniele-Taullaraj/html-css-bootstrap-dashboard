@@ -18,6 +18,277 @@
 
 <body>
 
+    <!-- +++++++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++++++ -->
+    <header class="navbar navbar-expand bg-body-tertiary px-3 position-fixed w-100">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.svg" alt="" class="d-none d-md-inline">
+            <!-- <img src="./img/mobile-logo.png" alt="" class="w-25 d-md-none"> -->
+        </a>
+        <input class="form-control me-2 " type=" search" placeholder="&#127859 Prova a cercare Lezioni di Laravel"
+            aria-label="Search">
+        <div class="d-flex gap-3">
+            <i class="d-none d-md-inline fa-solid fa-list-ul"></i>
+            <i class="d-none d-md-inline fa-solid fa-circle-question"></i>
+            <i class="d-none d-md-inline fa-solid fa-ellipsis-vertical"></i>
+            <i class="fa-solid fa-bell" style="color: #ff8c00;"></i>
+        </div>
+    </header>
+
+
+    <!-- +++++++++++++++++++++++++++++++++++ MAIN CONTAINER +++++++++++++++++++++++++++++++++++ -->
+    <div id="MY-container" class="container-fluid">
+        <div class="row">
+
+            <!-- +++++++++++++++++++++++++++++++++++ COL-2 NAV +++++++++++++++++++++++++++++++++++ -->
+            <div class="position-fixed p-0 col-1 ">
+
+                <nav class="d-flex flex-column justify-content-between align-items-center py-4">
+
+                    <ul class="nav  nav-pills flex-column ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light">
+                                <i class="fa-solid fa-house me-3"></i>
+                                <span class="d-none d-md-inline">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link text-light">
+                                <i class="fa-solid fa-chart-simple me-3"></i>
+                                <span class="">Stats</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link text-light">
+                                <i class="fa-solid fa-signal me-3"></i>
+                                <span class="">Signals</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a href="#" class="nav-link text-light">
+                            <i class="fa-solid fa-gear me-3"></i>
+                            <span>Admin</span>
+                        </a>
+                    </div>
+
+                </nav>
+            </div>
+
+
+
+            <!-- +++++++++++++++++++++++++++++++++++ COL-10 MAIN +++++++++++++++++++++++++++++++++++ -->
+            <div class="p-0 offset-1 col">
+                <main>
+
+                    <!-- +++++++++++++++++++++++++++++++++++ ADD STUDENT  +++++++++++++++++++++++++++++++++++ -->
+                    <div class="row w-100 p-3 m-0">
+
+                        <div class="col-5">
+                            <div>
+                                <h2 class="d-inline me-2 text-light">Boolean</h2>
+                                <span class="badge rounded-pill bg-primary">Piano blaze</span>
+                            </div>
+                            <div class="mt-2 ">
+                                <span class="badge rounded-pill bg-primary">3 app</span>
+                                <i class="fa-solid fa-chevron-right text-light mx-2"></i>
+
+                                <span class="badge rounded-pill bg-primary d-none d-md-inline">Boolean web app</span>
+                                <span class="badge rounded-pill bg-primary d-none d-md-inline">Boolean blog app</span>
+                                <span class="badge rounded-pill bg-primary d-none d-md-inline">Boolean mobile app</span>
+                                <span class="badge rounded-pill bg-primary d-md-none">+</span>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <span class="text-light">Studenti online negli ultimi 30 minuti</span>
+                            <h2 class="text-light mt-2">125</h2>
+                        </div>
+
+                        <div class="col-3 lala">
+                            <span class="text-light me-3">Nuovo studente</span>
+                            <button class="btn border border-1 rounded" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                aria-label="Toggle navigation">
+                                <i class="fa-solid fa-plus navbar-toggler-icon h-100 text-light py-2"></i>
+                            </button>
+                        </div>
+
+
+                        <!-- +++++++++++++++++++++++++++++++++++ OFFCANVAS +++++++++++++++++++++++++++++++++++ -->
+
+                        <!-- <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div> -->
+
+
+
+
+                    </div>
+
+                    <!-- +++++++++++++++++++++++++++++++++++ CARD CONTAINER +++++++++++++++++++++++++++++++++++ -->
+                    <div class="row flex-wrap m-0">
+                        <!-- +++++++++++++++++++++++++++++++++++ LEFT CARDS +++++++++++++++++++++++++++++++++++ -->
+                        <div class="col-12 col-md-8 p-0">
+                            <div class="card m-2">
+                                <div class="card-header">
+                                    <h2>Prossime classi</h2>
+                                </div>
+                                <div class="card-body">qualcosa </div>
+                            </div>
+
+                            <div class="card m-2">
+                                <div class="card-header">
+                                    <h2>F.A.Q</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Harum aperiam nesciunt soluta aspernatur
+                                                    asperiores doloribus necessitatibus magnam</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Harum aperiam nesciunt soluta aspernatur
+                                                    asperiores doloribus necessitatibus magnam</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Harum aperiam nesciunt soluta aspernatur
+                                                    asperiores doloribus necessitatibus magnam
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- +++++++++++++++++++++++++++++++++++ RIGHT CARDS +++++++++++++++++++++++++++++++++++ -->
+                        <div class="col-12 col-md-4 p-0">
+                            <div class="card m-2">
+                                <div class="card-header">
+                                    <h2>Todo</h2>
+                                </div>
+                                <div class="card-body">
+                                    <form class="border border-1 rounded">
+                                        <div class="p-2 border-bottom">
+                                            <input type="checkbox" id="primo" name="primo" value="primo">
+                                            <label for="primo"> Kickoff nuove classi</label>
+                                        </div>
+                                        <div class="p-2 border-bottom">
+                                            <input type="checkbox" id="secondo" name="secondo" value="secondo">
+                                            <label for="secondo"> Lezione su Bootstrap 5 in classe #75</label>
+                                        </div>
+                                        <div class="p-2 border-bottom">
+                                            <input type="checkbox" id="terzo" name="terzo" value="terzo">
+                                            <label for="terzo"> Controllare username github studenti</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card m-2">
+                                <div class="m-3 border border-1 rounded">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <img src="./img/stats.jpeg" alt="" class="w-100">
+                                            <h5 class="mt-3">Utenti attivi</h5>
+                                            <span>Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p class="mb-0">Gennaio: 1200</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p class="mb-0">febbraio: 800</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p class="mb-0">Marzo: 1500</p>
+                                        </li>
+                                        <li class="list-group-item py-3">
+                                            <a href="#">Visualizza report approfondito</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
