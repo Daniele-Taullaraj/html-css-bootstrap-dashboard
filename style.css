@@ -1,12 +1,12 @@
+/* GENREAL */
 :root {
     --header-height: 7vh;
 }
 
-
 header {
-    background-color: red;
+    background-color: white;
     height: var(--header-height);
-    z-index: 2;
+    z-index: 1;
 }
 
 nav {
@@ -20,12 +20,36 @@ main {
     margin-top: var(--header-height);
 }
 
-main>.row {
+#student {
     background-color: #5593eb;
 }
 
+
+/* icone nav */
 .nav-link i {
     width: 15%;
 }
 
-/* help */
+/* text */
+.responsive-text {
+    white-space: nowrap;
+}
+
+.table td {
+    white-space: nowrap;
+}
+
+/* icon bolean small */
+#small-logo {
+    height: 7vh;
+}
+
+
+/* hover */
+.nav-hover:hover {
+    background-color: rgb(156, 154, 154);
+}
+
+tbody tr:hover {
+    background-color: rgb(233, 231, 231);
+}
