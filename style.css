@@ -53,3 +53,16 @@ main {
 tbody tr:hover {
     background-color: rgb(233, 231, 231);
 }
+
+/* media */
+@media screen and (max-width: 768px) {
+    #offcanvasNavbar.offcanvas-end {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #offcanvasNavbar.offcanvas-end {
+        width: 50%;
+    }
+}

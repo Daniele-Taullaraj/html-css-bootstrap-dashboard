@@ -42,7 +42,6 @@
                     <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
             </div>
-
         </div>
     </header>
 
@@ -132,51 +131,95 @@
 
                         <!-- +++++++++++++++++++++++++++++++++++ OFFCANVAS +++++++++++++++++++++++++++++++++++ -->
 
-                        <!-- <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar"
+                        <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form class="d-flex mt-3" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
+                            <div class="offcanvas-body container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <form>
+                                            <label for="Nome" class="fw-bold">Nome</label><br>
+                                            <input type="text" id="Nome" name="Nome" class="form-control"><br>
+
+                                            <label for="Email" class="fw-bold">Email</label><br>
+                                            <div class="input-group">
+                                                <span class="input-group-text">@</span>
+                                                <input type=" email" class="form-control" id="Email" name="Email">
+                                            </div><br>
+
+                                            <label for="Email" class="fw-bold">Indirizzo Email</label><br>
+                                            <div class="input-group">
+                                                <span class="input-group-text">@</span>
+                                                <input type=" email" class="form-control" id="Email" name="Email">
+                                            </div><br>
+
+                                        </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <form>
+                                            <label for="Cognome" class="fw-bold">Cognome</label><br>
+                                            <input type="text" id="Cognome" name="Cognome" class="form-control"><br>
+                                            <label for="Password" class="fw-bold">Password</label><br>
+                                            <input type="password" id="Password" name="Password"
+                                                class="form-control"><br>
+                                            <label for="Password" class="fw-bold">Password</label><br>
+                                            <input type="password" id="Password" name="Password"
+                                                class="form-control"><br>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <form>
+                                            <label for="Indirizzo" class="fw-bold">Indirizzo</label><br>
+                                            <input type="text" id="Indirizzo" name="Indirizzo" class="form-control"><br>
+                                        </form>
+                                    </div>
+                                    <div class="col-6">
+                                        <form>
+                                            <label for="Città" class="fw-bold">Città</label><br>
+                                            <input type="text" id="Città" name="Città" class="form-control"><br>
+                                        </form>
+                                    </div>
+                                    <div class="col-4">
+                                        <form>
+                                            <label for="Stato" class="fw-bold">Stato</label><br>
+                                            <select name="Stato" id="Stato" class="form-control">
+                                                <option value="" disabled selected hidden>Scegli <span>&#9660;</span>
+                                                </option> <!-- Utilizzo dello span per l'icona e il testo -->
+                                                <option value="">Scegli <span>&#9660;</span></option>
+                                                <option value="1">Scegli1</option>
+                                                <option value="2">Scegli2</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="col-2">
+                                        <form>
+                                            <label for="CAP" class="fw-bold">CAP</label><br>
+                                            <input type="number" id="CAP" name="CAP" class="form-control"><br>
+                                        </form>
+                                    </div>
+                                    <div class="col-12">
+                                        <form>
+                                            <input type="file" class="form-control">
+                                            <input type="checkbox" id="Seleziona" name="Seleziona" value="Seleziona"
+                                                class="my-4">
+                                            <label for="Seleziona"> Seleziona pre proseguire</label><br>
+                                            <button type="button" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                        </div> -->
-
-
-
-
+                        </div>
                     </div>
 
                     <!-- +++++++++++++++++++++++++++++++++++ CARD CONTAINER +++++++++++++++++++++++++++++++++++ -->
                     <div class="row m-0">
+
                         <!-- +++++++++++++++++++++++++++++++++++ LEFT CARDS +++++++++++++++++++++++++++++++++++ -->
                         <div class="col-12 col-md-8 p-0">
                             <div class="card m-2">
