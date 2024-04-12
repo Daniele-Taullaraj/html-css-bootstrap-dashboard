@@ -19,8 +19,8 @@
 <body>
 
     <!-- +++++++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++++++ -->
-    <header class="navbar navbar-expand position-fixed w-100 px-3 align-items-center">
-        <div class="navbar-brand ">
+    <header class="navbar navbar-expand position-fixed w-100 px-3 ">
+        <div class="me-2">
             <img src="./img/logo.svg" alt="" class="d-none d-md-inline">
             <img src="./img/mobile-logo.png" alt="" class="d-md-none" id="small-logo">
         </div>
@@ -56,8 +56,8 @@
 
                 <nav class="d-flex flex-column justify-content-between align-items-center py-4">
 
-                    <ul class="nav  nav-pills flex-column">
-                        <li class="nav-item">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item ">
                             <a href="#" class="nav-link text-light px-0 responsive-text nav-hover">
                                 <i class="fa-solid fa-house me-3 ps-3"></i>
                                 <span class="d-none d-lg-inline ms-2"> Home</span>
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
 
-                    <div>
+                    <div class="nav-item ">
                         <a href="#" class="nav-link text-light px-0 responsive-text nav-hover">
                             <i class="fa-solid fa-gear me-3 ps-3"></i>
                             <span class="d-none d-lg-inline ms-2"> Admin</span>
@@ -94,10 +94,10 @@
 
 
                     <!-- +++++++++++++++++++++++++++++++++++ ADD STUDENT  +++++++++++++++++++++++++++++++++++ -->
-                    <div class="d-flex flex-column flex-sm-row p-3 m-0" id="student">
+                    <div class="d-flex flex-column flex-sm-row p-3 gap-2" id="student">
 
                         <div
-                            class="order-sm-3 col responsive-text d-md-flex align-items-start justify-content-end pe-lg-5">
+                            class="order-sm-3 col d-md-flex align-items-start justify-content-end responsive-text pe-lg-5">
                             <span class="text-light pt-2 me-3">Nuovo studente</span>
                             <button class="btn border border-1 rounded" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -189,7 +189,7 @@
                                             <label for="Stato" class="fw-bold">Stato</label><br>
                                             <select name="Stato" id="Stato" class="form-control">
                                                 <option value="" disabled selected hidden>Scegli <span>&#9660;</span>
-                                                </option> <!-- Utilizzo dello span per l'icona e il testo -->
+                                                </option>
                                                 <option value="">Scegli <span>&#9660;</span></option>
                                                 <option value="1">Scegli1</option>
                                                 <option value="2">Scegli2</option>
@@ -231,8 +231,9 @@
                                         <thead>
                                             <tr>
                                                 <td style="width:60%">Nome</td>
-                                                <td class="responsive-text text-center">Data inizio</td>
-                                                <td class="text-center">ROI</td>
+                                                <td class="responsive-text text-center d-none d-sm-table-cell">
+                                                    Data inizio</td>
+                                                <td class="text-center d-none d-sm-table-cell">ROI</td>
                                                 <td class="text-center">Stato</td>
                                                 <td class="text-center">Azioni</td>
 
@@ -244,9 +245,11 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 75</span>
                                                 </td>
-                                                <td class="align-middle text-center ">15 Feb
+                                                <td class="align-middle text-center d-none d-sm-table-cell ">15
+                                                    Feb
                                                     2021</td>
-                                                <td class="align-middle text-center ">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell ">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-success">Done</span>
                                                 </td>
@@ -262,8 +265,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 76</span>
                                                 </td>
-                                                <td class="align-middle text-center">16 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">16
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-success">Done</span>
                                                 </td>
@@ -279,8 +284,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 77</span>
                                                 </td>
-                                                <td class="align-middle text-center">17 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">17
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-warning">process</span>
                                                 </td>
@@ -296,8 +303,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 78</span>
                                                 </td>
-                                                <td class="align-middle text-center">18 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">18
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-success">Done</span>
                                                 </td>
@@ -313,8 +322,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 79</span>
                                                 </td>
-                                                <td class="align-middle text-center">19 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">19
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-danger">failed</span>
                                                 </td>
@@ -330,8 +341,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 80</span>
                                                 </td>
-                                                <td class="align-middle text-center">20 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-success">Done</span>
                                                 </td>
@@ -347,8 +360,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 81</span>
                                                 </td>
-                                                <td class="align-middle text-center">21 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">21
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-danger">failed</span>
                                                 </td>
@@ -364,8 +379,10 @@
                                                     <img src="./img/avatar.png" alt="">
                                                     <span class="align-middle">Classe 82</span>
                                                 </td>
-                                                <td class="align-middle text-center">22 Feb 2021</td>
-                                                <td class="align-middle text-center">20%</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">22
+                                                    Feb 2021</td>
+                                                <td class="align-middle text-center d-none d-sm-table-cell">20%
+                                                </td>
                                                 <td class="align-middle text-center">
                                                     <span class="badge rounded-pill bg-success">Done</span>
                                                 </td>
